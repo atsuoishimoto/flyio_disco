@@ -1,0 +1,15 @@
+# fly.toml file generated for ancient-water-3732 on 2022-05-09T18:37:24+09:00
+
+app = "xxxxxxxxxxxxxxxxxxxxx"
+
+kill_signal = "SIGINT"
+kill_timeout = 5
+processes = []
+
+[mounts]
+source="bot_data"
+destination="/app/data"
+
+[deploy]
+strategy = "rolling"
+
